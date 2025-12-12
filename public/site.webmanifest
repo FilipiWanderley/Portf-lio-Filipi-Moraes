@@ -1,0 +1,14 @@
+{
+  "name": "Filipi Moraes — Product Designer & Full-Stack Developer",
+  "short_name": "Filipi Moraes",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#12121A",
+  "background_color": "#12121A",
+  "display": "standalone"
+}
