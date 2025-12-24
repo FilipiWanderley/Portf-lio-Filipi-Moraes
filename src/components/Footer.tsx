@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Description */}
           <div className="space-y-6">
-            <img src={logo} alt="Filipi Moraes" className="h-48 w-auto brightness-0 invert" />
+            <img src={logo} alt="Filipi Moraes" className="h-48 w-auto brightness-0" />
             <p className="text-background/70 leading-relaxed">
               {t("footer.description")}
             </p>
