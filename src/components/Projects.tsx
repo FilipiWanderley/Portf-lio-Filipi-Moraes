@@ -23,12 +23,13 @@ import projectPortfolioMain from "@/assets/project-portfolio-main.png";
 import projectPortfolioOld from "@/assets/project-portfolio-old.png";
 import projectGymBlue from "@/assets/project-gym-blue.png";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Project } from "@/types";
 
 const Projects = () => {
   const { t } = useLanguage();
   const [api, setApi] = useState<CarouselApi>();
   
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Academia Boa Forma",
       category: "Landing Page",

@@ -13,12 +13,13 @@ import avatarCarlos from "@/assets/testimonial-carlos.png";
 import avatarMariana from "@/assets/testimonial-mariana.png";
 import avatarPersonal from "@/assets/testimonial-personal.png";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Testimonial } from "@/types";
 
 const Testimonials = () => {
   const { t } = useLanguage();
   const [api, setApi] = useState<CarouselApi>();
   
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
       name: "Renan Barbosa",
       role: "CEO, Academia Boa Forma",

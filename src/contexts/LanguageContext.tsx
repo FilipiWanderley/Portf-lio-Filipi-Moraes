@@ -1,12 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from "react";
-
-type Language = "pt" | "en";
-
-interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
-  t: (key: string) => string;
-}
+import { Language, LanguageContextType } from "../types";
 
 const translations = {
   pt: {
