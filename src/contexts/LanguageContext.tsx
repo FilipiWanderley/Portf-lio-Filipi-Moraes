@@ -31,7 +31,7 @@ const translations = {
     "about.education": "Educação",
     "about.experience": "Experiência",
     "about.edu.software": "Engenharia de Software",
-    "about.edu.automation": "Técnico em Automação Industrial",
+    "about.edu.product_design": "Tecnólogo em Design de Produto",
     "about.edu.systems": "Bacharel em Sistemas de Informação",
     "about.edu.uxui": "Certificação em UX/UI Design",
     "about.exp.freelancer": "UX/UI Designer & Dev",
@@ -75,6 +75,14 @@ const translations = {
     "projects.conecta.description": "Campanha de marketing digital para provedor de internet com identidade visual vibrante.",
     "projects.veloce.description": "Peças promocionais para concessionária de veículos com foco em ofertas e lançamentos.",
     "projects.checkbank.description": "Materiais visuais para fintech de pagamentos e soluções bancárias digitais.",
+    "projects.crm.description": "Dashboard administrativo para gestão de alunos e treinos de academia (SaaS).",
+    "projects.blindagem.description": "Landing page corporativa focada em segurança da informação e proteção de dados.",
+    "projects.portfolio_main.description": "Meu portfólio principal, destacando habilidades em Product Design e desenvolvimento Full-Stack.",
+    "projects.portfolio_old.description": "Versão anterior do portfólio, focada em apresentação pessoal e projetos de design.",
+    "projects.gym_blue.description": "Landing page moderna para academia, com planos e horários claros e design impactante.",
+    "projects.project10.description": "Website corporativo para empresa de consultoria financeira.",
+    "projects.project11.description": "App mobile para rastreamento de fitness e saúde pessoal.",
+    "projects.project12.description": "Design de sistema (Design System) para escalabilidade de produtos digitais.",
     
     // Testimonials
     "testimonials.label": "Clientes Freelancer",
@@ -158,6 +166,13 @@ const translations = {
     "projects.conecta.description": "Digital marketing campaign for internet provider with vibrant visual identity.",
     "projects.veloce.description": "Promotional pieces for car dealership focused on offers and launches.",
     "projects.checkbank.description": "Visual materials for fintech payments and digital banking solutions.",
+    "projects.dental.description": "Complete landing page for dental clinic with online scheduling and specialty showcase.",
+    "projects.law.description": "Sober and elegant institutional website for law firm, conveying authority and trust.",
+    "projects.pizza.description": "Interactive digital menu for pizzeria with appetizing photos and easy ordering.",
+    "projects.crm.description": "Administrative dashboard for gym student and workout management (SaaS).",
+    "projects.project10.description": "Corporate website for financial consulting firm.",
+    "projects.project11.description": "Mobile app for fitness tracking and personal health.",
+    "projects.project12.description": "Design System for digital product scalability.",
     
     // Testimonials
     "testimonials.label": "Freelance Clients",

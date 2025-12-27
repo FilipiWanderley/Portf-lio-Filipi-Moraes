@@ -14,6 +14,14 @@ import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3-new.jpg";
 import project4 from "@/assets/project-4.png";
 import projectBoaforma from "@/assets/project-boaforma.png";
+import projectDental from "@/assets/landing-page-dentista.png";
+import projectLaw from "@/assets/aurum-advocacia.png";
+import projectPizza from "@/assets/cardapio-pizza.png";
+import projectCRM from "@/assets/crm-boa-forma.png";
+import projectBlindagem from "@/assets/project-blindagem.png";
+import projectPortfolioMain from "@/assets/project-portfolio-main.png";
+import projectPortfolioOld from "@/assets/project-portfolio-old.png";
+import projectGymBlue from "@/assets/project-gym-blue.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Projects = () => {
@@ -56,6 +64,62 @@ const Projects = () => {
       image: project4,
       behanceUrl: "https://www.behance.net/gallery/211475065/SOCIAL-MEDIA-BANCO-DIGITAL",
     },
+    {
+      title: "Nossa Dental",
+      category: "Landing Page",
+      descriptionKey: "projects.dental.description",
+      image: projectDental,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "Aurum Advocacia",
+      category: "Institutional Site",
+      descriptionKey: "projects.law.description",
+      image: projectLaw,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "Pizzaria Bella",
+      category: "Web App / Delivery",
+      descriptionKey: "projects.pizza.description",
+      image: projectPizza,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "CRM Boa Forma",
+      category: "SaaS Dashboard",
+      descriptionKey: "projects.crm.description",
+      image: projectCRM,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "Blindagem 360",
+      category: "Landing Page",
+      descriptionKey: "projects.blindagem.description",
+      image: projectBlindagem,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "Portfolio 2024",
+      category: "Product Design",
+      descriptionKey: "projects.portfolio_main.description",
+      image: projectPortfolioMain,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "Portfolio V1",
+      category: "UX/UI Design",
+      descriptionKey: "projects.portfolio_old.description",
+      image: projectPortfolioOld,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
+    {
+      title: "Bruno Canell",
+      category: "Landing Page",
+      descriptionKey: "projects.gym_blue.description",
+      image: projectGymBlue,
+      behanceUrl: "https://www.behance.net/filipimoraes1",
+    },
   ];
 
   const scrollNext = useCallback(() => {
@@ -69,19 +133,13 @@ const Projects = () => {
 
     const intervalId = setInterval(() => {
       scrollNext();
-    }, 7000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, [api, scrollNext]);
 
   return (
     <section id="projects" className="section-spacing relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-0 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
-      </div>
-
       <div className="container-custom relative z-10">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">

@@ -209,6 +209,15 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 @keyframes float-delayed {
   0%, 100% {
     transform: translateY(0px) rotate(0deg);
@@ -226,6 +235,15 @@ All colors MUST be HSL.
   50% {
     opacity: 0.8;
     box-shadow: 0 0 40px hsl(240 100% 57% / 0.8);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
   }
 }
 
@@ -271,12 +289,20 @@ All colors MUST be HSL.
   animation: float 4s ease-in-out infinite;
 }
 
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
 .animate-float-delayed {
   animation: float-delayed 5s ease-in-out infinite;
 }
 
 .animate-pulse-neon {
   animation: pulse-neon 2s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
 }
 
 .animate-orbit {

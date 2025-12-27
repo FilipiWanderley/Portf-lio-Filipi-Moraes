@@ -137,12 +137,6 @@ const TechStack = () => {
 
   return (
     <section className="section-spacing relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-0 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
-      </div>
-
       <div className="container-custom relative z-10">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">

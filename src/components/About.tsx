@@ -14,12 +14,6 @@ const About = () => {
 
   return (
     <section id="about" className="section-spacing relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent-secondary/5 rounded-full blur-3xl" />
-      </div>
-
       <div className="container-custom relative z-10">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
@@ -97,7 +91,7 @@ const About = () => {
                     <span className="text-foreground">{t("about.edu.software")}</span> — UNIFATECIE (2023-2027)
                   </p>
                   <p className="leading-relaxed">
-                    <span className="text-foreground">{t("about.edu.automation")}</span> — UNICORP (2025)
+                    <span className="text-foreground">{t("about.edu.product_design")}</span> — UniFatecie (2024)
                   </p>
                   <p className="leading-relaxed">
                     <span className="text-foreground">{t("about.edu.systems")}</span> — AESO Barros Melo (2015)

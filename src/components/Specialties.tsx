@@ -37,14 +37,6 @@ const Specialties = () => {
 
   return (
     <section className="section-spacing bg-secondary/50 relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
-        style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--foreground)) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }}
-      />
-
       <div className="container-custom relative z-10">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
