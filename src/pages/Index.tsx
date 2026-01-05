@@ -1,31 +1,36 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
+
+import RainingLetters from "@/components/ui/modern-animated-hero-section";
 import Specialties from "@/components/Specialties";
-import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
+import TechStack from "@/components/TechStack";
+import TechBackground from "@/components/TechBackground";
+import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import TechBackground from "@/components/TechBackground";
 
-const Index = () => {
+export default function Home() {
   return (
-    <main className="min-h-screen relative">
-      <TechBackground />
-      <div className="relative z-10">
+    <main className="relative">
+      <div className="absolute top-4 right-4 z-50">
         <LanguageSwitcher />
-        <Hero />
-        <About />
-        <Specialties />
-        <TechStack />
-        <Projects />
-        <Testimonials />
-        <Footer />
-        <WhatsAppButton />
       </div>
+      
+      {/* Novo Hero com efeito Matrix Azul */}
+      <RainingLetters />
+      
+      {/* Conteúdo Original Restaurado */}
+      <Specialties />
+      <Projects />
+      <div className="relative">
+        <TechBackground />
+        <TechStack />
+      </div>
+      <About />
+      <Testimonials />
+      <Footer />
+      <WhatsAppButton />
     </main>
   );
-};
-
-export default Index;
+}

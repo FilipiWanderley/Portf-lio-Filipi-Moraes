@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-illustration.png";
 import logo from "@/assets/logo.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -112,16 +111,6 @@ const Hero = () => {
                   <MessageCircle className="ml-2 h-6 w-6 text-accent" />
                 </a>
               </Button>
-            </div>
-          </div>
-
-          <div className="relative animate-fade-in delay-200 hidden md:block">
-            <div className="relative z-10">
-              <img 
-                src={heroImage} 
-                alt="Filipi Moraes" 
-                className="w-full h-auto max-w-2xl ml-auto drop-shadow-2xl translate-x-12"
-              />
             </div>
           </div>
         </div>

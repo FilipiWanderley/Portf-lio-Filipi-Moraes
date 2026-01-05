@@ -12,11 +12,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-background section-spacing relative overflow-hidden">
+    <footer className="bg-black text-white section-spacing relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none" 
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--background)) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, #ffffff 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}
       />
@@ -25,8 +25,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Description */}
           <div className="space-y-6">
-            <img src={logo} alt="Filipi Moraes" className="h-48 w-auto brightness-0" />
-            <p className="text-background/70 leading-relaxed">
+            <img src={logo} alt="Filipi Moraes" className="h-48 w-auto brightness-0 invert" />
+            <p className="text-white/70 leading-relaxed">
               {t("footer.description")}
             </p>
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
               <span className="text-base font-medium text-accent">{t("footer.contact")}</span>
             </div>
             {/* Increased text size for accessibility */}
-            <div className="space-y-3 text-base text-background/80 pt-4">
+            <div className="space-y-3 text-base text-white/80 pt-4">
               <a 
                 href="mailto:filipiwms@gmail.com" 
                 className="flex items-center gap-3 hover:text-accent transition-colors duration-300"
@@ -67,7 +67,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-12 w-12 rounded-xl bg-background/10 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-neon)] border border-background/10 hover:border-accent"
+                  className="h-12 w-12 rounded-xl bg-white/10 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-neon)] border border-white/10 hover:border-accent"
                   aria-label={social.label}
                 >
                   <social.icon className="h-5 w-5" />
@@ -78,8 +78,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar - improved text contrast */}
-        <div className="pt-8 border-t border-background/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-base text-background/80">
+        <div className="pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-base text-white/80">
             <p>{t("footer.copyright")}</p>
             <p className="flex items-center gap-2">
               {t("footer.madeWith") || "Feito com"} 
