@@ -126,7 +126,7 @@ const RainingLetters: React.FC = () => {
 
   const createCharacters = useCallback(() => {
     const allChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?"
-    const charCount = 300
+    const charCount = 600
     const newCharacters: Character[] = []
 
     for (let i = 0; i < charCount; i++) {
@@ -151,7 +151,7 @@ const RainingLetters: React.FC = () => {
       }
       setActiveIndices(newActiveIndices)
     }
-    const flickerInterval = setInterval(updateActiveIndices, 50)
+    const flickerInterval = setInterval(updateActiveIndices, 250)
     return () => clearInterval(flickerInterval)
   }, [characters.length])
 
@@ -188,7 +188,7 @@ const RainingLetters: React.FC = () => {
       {characters.map((char, index) => (
         <span
           key={index}
-          className={`absolute text-xs transition-colors duration-100 ${
+          className={`absolute text-xs transition-colors duration-300 ${
             activeIndices.has(index)
               ? "text-blue-500 text-base scale-125 z-10 font-bold animate-pulse" // AZUL NEON
               : "text-slate-800 font-light" // CINZA ESCURO
@@ -201,7 +201,7 @@ const RainingLetters: React.FC = () => {
               ? '0 0 8px rgba(59, 130, 246, 0.8), 0 0 12px rgba(37, 99, 235, 0.4)' // BRILHO AZUL
               : 'none',
             opacity: activeIndices.has(index) ? 1 : 0.4,
-            transition: 'color 0.1s, transform 0.1s, text-shadow 0.1s',
+            transition: 'color 0.3s, transform 0.3s, text-shadow 0.3s',
             willChange: 'transform, top',
             fontSize: '1.8rem'
           }}
